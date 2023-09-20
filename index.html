@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form Authenticiation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">logo</h2> 
+        <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services </a>
+        <a href="#">Contact</a>
+      
+        </nav>
+    </header>
+    <div class="continer">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="login-form">
+            <h2>sign up</h2>
+            <form action="#">
+
+                <div class="input-box">
+                    <label for="Username">username</label>
+                <br>                
+                <input type="username" id="username" >
+                <span class="icon"><ion-icon name="person-add"></ion-icon></span>
+                <br>
+                <label for="email">email</label>
+                <br>  
+                <input type="email"  id="email"> 
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>              
+                <br>
+                <label for="password">password</label>
+                <br>
+                <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <br>
+                <input type="file" id="image">
+                <br>
+                 <button id="btn-signup">submit</button><br>
+                </div>
+                 <br>
+                 <div class="input-box">
+                    <h2>Login</h2>
+                    <span class="icon"> </span>
+                    <label for="Email">email</label>
+                    <br>          
+                    <input type="email"  id="email-login">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span> 
+                    <br>
+                    <br>
+                    <input type="password"  id="password-login">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <br>
+                    <br>
+                    <label for="password">password</label>
+                    <br>
+                    <br>
+                    <button id="btn-login">submit</button><br>
+                 </div>  
+                </form>
+        </div>
+    <script type="module" src="./config.js"></script>
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
